@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zdj-Ii-zmJ">
+                                <rect key="frame" x="20" y="101" width="335" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入姓名:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW5-tn-uRD">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1eA-qM-Fcb">
+                                        <rect key="frame" x="91.5" y="0.0" width="204.5" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mp2-Qn-RTj">
+                                        <rect key="frame" x="296" y="0.0" width="39" height="40"/>
+                                        <state key="normal" title="保  存"/>
+                                        <connections>
+                                            <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gW2-LJ-Z5p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YW5-tn-uRD" secondAttribute="bottom" id="8xR-aS-hi4"/>
+                                    <constraint firstItem="YW5-tn-uRD" firstAttribute="leading" secondItem="Zdj-Ii-zmJ" secondAttribute="leading" id="FVV-0K-f9H"/>
+                                    <constraint firstItem="YW5-tn-uRD" firstAttribute="top" secondItem="Zdj-Ii-zmJ" secondAttribute="top" id="tAF-y7-dKv"/>
+                                    <constraint firstAttribute="height" constant="40" id="uDR-Jq-pUn"/>
+                                    <constraint firstItem="1eA-qM-Fcb" firstAttribute="leading" secondItem="YW5-tn-uRD" secondAttribute="trailing" id="wGz-Ye-fDH"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcA-n9-4i8">
+                                <rect key="frame" x="20" y="50" width="335" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入编号:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d32-9j-Tbr">
+                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ifc-P1-gps">
+                                        <rect key="frame" x="91.5" y="0.0" width="243.5" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cob-NZ-HJx">
+                                <rect key="frame" x="10" y="169" width="355" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ecO-Xb-FGJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zdj-Ii-zmJ" secondAttribute="trailing" constant="20" id="0JO-6g-RyB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cob-NZ-HJx" secondAttribute="trailing" constant="10" id="0uf-zD-Zy6"/>
+                            <constraint firstItem="kcA-n9-4i8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="50b-1E-rbf"/>
+                            <constraint firstItem="Cob-NZ-HJx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="5d0-E8-Kdp"/>
+                            <constraint firstItem="Zdj-Ii-zmJ" firstAttribute="leading" secondItem="kcA-n9-4i8" secondAttribute="leading" id="OY3-65-5fZ"/>
+                            <constraint firstItem="Cob-NZ-HJx" firstAttribute="top" secondItem="Zdj-Ii-zmJ" secondAttribute="bottom" constant="28" id="Tbb-WR-csl"/>
+                            <constraint firstItem="Zdj-Ii-zmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WTG-kZ-BkB"/>
+                            <constraint firstItem="Zdj-Ii-zmJ" firstAttribute="height" secondItem="kcA-n9-4i8" secondAttribute="height" id="dFI-6E-XjF"/>
+                            <constraint firstItem="Zdj-Ii-zmJ" firstAttribute="trailing" secondItem="kcA-n9-4i8" secondAttribute="trailing" id="s1j-Ql-1pl"/>
+                            <constraint firstItem="Zdj-Ii-zmJ" firstAttribute="top" secondItem="kcA-n9-4i8" secondAttribute="bottom" constant="11" id="zBQ-Yv-56w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="numTextField" destination="Ifc-P1-gps" id="03a-dd-IuN"/>
+                        <outlet property="testLBL" destination="Cob-NZ-HJx" id="4Zu-NU-oEb"/>
+                        <outlet property="textField" destination="1eA-qM-Fcb" id="9MW-pi-EVm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
